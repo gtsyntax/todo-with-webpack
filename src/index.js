@@ -1,6 +1,7 @@
 import { Header } from "./components/Header"
 import { Container } from "./components/Container"
 import { CardItem } from "./components/CardItem"
+import { TodoList } from "./components/TodoList"
 
 import { Todo } from "./components/Todo"
 import { Project } from "./components/Project"
@@ -33,7 +34,29 @@ const projects = Container(
     ]
 )
 
+const todos = [
+    {
+        "id": 1,
+        "title": "Workout",
+        "dueDate": Date(),
+        "description": "Do yoga",
+        "priority": "High"
+
+    },
+    {
+        "id": 2,
+        "title": "Lunch",
+        "dueDate": Date(),
+        "description": "Buy salad",
+        "priority": "High"
+
+    },
+]
+
+const todoList = TodoList(todos)
+
 
 app.appendChild(Header)
 app.appendChild(dashboard.createContainer())
 app.appendChild(projects.createContainer())
+app.appendChild(todoList.createList())

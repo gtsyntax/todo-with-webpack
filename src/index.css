@@ -46,7 +46,14 @@ body {
     gap: 1rem;
 }
 
-.card-item {
+.todo-list-container {
+    display: grid;
+    padding: 1rem;
+    border: 1px solid var(--secondary-color);
+    gap: 1rem;
+}
+
+.card-item, .todo-item {
     border: 1px solid var(--secondary-color);
     padding: 1rem;
 }
