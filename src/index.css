@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #3B1F2B;
+    --secondary-color: #A23B72;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+}
+
+#content {
+    width: 60vw;
+    margin: 0 auto;
+    display: grid;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.header {
+    padding: 1rem;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.create-todo {
+    padding: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 40vw;
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.card-item {
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+}
